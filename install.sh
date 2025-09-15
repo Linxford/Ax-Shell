@@ -164,21 +164,54 @@ sudo systemctl enable --now bluetooth
 
 echo "[*] Installing Ax-Shell dependencies..."
 sudo pacman -S --noconfirm --needed \
-    python-fabric \
-    python-rich \
-    python-pyyaml \
-    python-click \
-    python-psutil \
-    python-pygments \
-    python-jinja \
-    python-requests
+    brightnessctl
+   cava
+   cliphist
+   fabric-cli-git
+   gnome-bluetooth-3.0
+   gobject-introspection
+   gpu-screen-recorder
+   hypridle
+   hyprlock
+   hyprpicker
+   hyprshot
+   hyprsunset
+   imagemagick
+   libnotify
+   matugen-bin
+   noto-fonts-emoji
+   nvtop
+   playerctl
+   power-profiles-daemon
+   python-fabric-git
+   python-gobject
+   python-ijson
+   python-numpy
+   python-pillow
+   python-psutil
+   python-pywayland
+   python-requests
+   python-setproctitle
+   python-toml
+   python-watchdog
+   swappy
+   swww-git
+   tesseract
+   tmux
+   ttf-nerd-fonts-symbols-mono
+   unzip
+   upower
+   uwsm
+   vte3
+   webp-pixbuf-loader
+   wl-clipboard
 
 # optional deps if you want pip fallback
-pip install --user --upgrade fabric rich pyyaml click psutil pygments jinja2 requests
+#pip install --user --upgrade fabric rich pyyaml click psutil pygments jinja2 requests
 
 echo "[*] Cloning Ax-Shell..."
 if [ ! -d "$HOME/Ax-Shell" ]; then
-    git clone https://github.com/Axenide/Ax-Shell.git ~/Ax-Shell
+    git clone https://github.com/Linxford/Ax-Shell.git ~/Ax-Shell
 else
     echo "Ax-Shell already exists at ~/Ax-Shell"
 fi
