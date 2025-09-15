@@ -87,7 +87,8 @@
 
 # echo "Installing required fonts..."
 
-# FONT_URL="https://github.com/zed-industries/zed-fonts/releases/download/1.2.0/zed-sans-1.2.0.zip"
+# FONT_URL="curl -L --retry 5 --retry-delay 3 --fail --continue-at - -o zed-sans-1.2.0.zip "https://github.com/zed-industries/zed-fonts/releases/download/1.2.0/zed-sans-1.2.0.zip"
+
 # FONT_DIR="$HOME/.fonts/zed-sans"
 # TEMP_ZIP="/tmp/zed-sans-1.2.0.zip"
 
